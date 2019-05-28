@@ -1,13 +1,16 @@
-package com.example.multiindicator;
+package com.example.indicatorlib.views;
 
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.graphics.Canvas;
-import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.RectF;
 import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.View;
+
+import com.example.indicatorlib.R;
+import com.example.indicatorlib.utils.Utils;
 
 
 /**
@@ -21,51 +24,55 @@ import android.view.View;
  */
 public class TabView extends View implements ViewPager.OnPageChangeListener {
 
-
-    private float tabHeight;
     private Paint tabPaint;
-    private float tabCount;
-    private float tabWidth;//tab的宽度
-
-    private int default_width;
-    private int default_height;
-
-    private float start;//tab距离左边的边距
+    private float tabCount;     //根据内容自动匹配
+    private float tabWidth;     //tab的宽度
+    private int screenWidth;    //屏幕看度
+    private int tabHeight;      //tab高度
+    private int tabColor;       //tab颜色
+    private int tabRadius;      //tab圆角读度数
+    private float tabStart;     //tab距离左边的边距
+    private float tabEnd;       //tab右边的位置
 
 
     private RectF mStripBounds = new RectF();
 
     public TabView(Context context) {
         super(context);
-        init(context);
     }
 
     public TabView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        init(context);
+        init(context,attrs);
     }
 
     public TabView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        init(context);
+        init(context,attrs);
     }
 
-    private void init(Context context) {
-        tabHeight = Utils.dp2px(context, 3);
+    private void init(Context context, AttributeSet attrs) {
+
+        int defaultColor = context.getResources().getColor(R.color.red);
+        int defaultHeight = Utils.dp2px(context, 3);
+        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.TabViewDrawable);
+        tabHeight = typedArray.getDimensionPixelSize(R.styleable.TabViewDrawable_tabHeight, defaultHeight);
+        tabRadius = typedArray.getDimensionPixelSize(R.styleable.TabViewDrawable_tabRadius, 20);
+        tabColor = typedArray.getColor(R.styleable.TabViewDrawable_tabColor, defaultColor);
+        typedArray.recycle();
 
         tabPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        tabPaint.setColor(Color.RED);
+        tabPaint.setColor(tabColor);
         tabPaint.setStyle(Paint.Style.FILL);
 
-        default_width = Utils.getScreenW(context);
-        default_height = (int) tabHeight;
+        screenWidth = Utils.getScreenW(context);
     }
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-        int width = measureLength(widthMeasureSpec, default_width);
-        int height = measureLength(heightMeasureSpec, default_height);
+        int width = measureLength(widthMeasureSpec, screenWidth);
+        int height = measureLength(heightMeasureSpec, tabHeight);
         setMeasuredDimension(width, height);
 
     }
@@ -96,13 +103,14 @@ public class TabView extends View implements ViewPager.OnPageChangeListener {
 
     private void drawTab(Canvas canvas) {
         //重点在于计算这个开始start位置的值和 tabWidth这个tab宽度的值 此值在滑动时都可能是变化的
-        mStripBounds.set(start, 0, start + tabWidth, tabHeight);
-        canvas.drawRoundRect(mStripBounds, 20, 20, tabPaint);
+        mStripBounds.set(tabStart, 0, tabEnd, tabHeight);
+        canvas.drawRoundRect(mStripBounds, tabRadius, tabRadius, tabPaint);
     }
 
     public void setScroll(int position, float positionOffset) {
-        tabWidth = default_width / tabCount;
-        start = positionOffset * tabWidth + position * tabWidth;
+        tabWidth = screenWidth / tabCount;
+        tabEnd = tabStart + tabWidth;
+        tabStart = positionOffset * tabWidth + position * tabWidth;
         invalidate();
     }
 

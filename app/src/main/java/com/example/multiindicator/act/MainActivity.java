@@ -1,9 +1,11 @@
-package com.example.multiindicator;
+package com.example.multiindicator.act;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import com.example.multiindicator.R;
 
 public class MainActivity extends AppCompatActivity {
 

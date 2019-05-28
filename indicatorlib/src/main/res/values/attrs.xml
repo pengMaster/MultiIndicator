@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TabViewDrawable">
+        <attr name="paddingWidth" format="dimension" />
+        <attr name="tabHeight" format="dimension" />
+        <attr name="tabColor" format="color" />
+        <attr name="tabRadius" format="dimension" />
+    </declare-styleable>
+</resources>

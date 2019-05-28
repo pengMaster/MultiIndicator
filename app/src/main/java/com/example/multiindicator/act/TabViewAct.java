@@ -1,4 +1,4 @@
-package com.example.multiindicator;
+package com.example.multiindicator.act;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,6 +7,9 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
 import com.example.indicatorlib.base.BaseFragmentAdapter;
+import com.example.indicatorlib.views.TabView;
+import com.example.multiindicator.R;
+import com.example.multiindicator.frag.TestFragment;
 
 import java.util.ArrayList;
 import java.util.List;

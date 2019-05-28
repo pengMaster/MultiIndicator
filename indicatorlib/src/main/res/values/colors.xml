@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white_f2">#f1f2f7</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey_f4">#f4f4f4</color>
+    <color name="blue_70">#7082a8</color>
+    <color name="grey_45">#453d3b</color>
+    <color name="red">#e2211c</color>
+    <color name="red_ffe">#ffeeee</color>
+    <color name="red_fd">#fd6853</color>
+    <color name="red_eb">#eb2d4d</color>
+    <color name="red_e2">#e2211c</color>
+    <color name="red_fe">#fe6b55</color>
+    <color name="hint_rad">#c25c59</color>
+    <color name="red_ff2">#ff2d55</color>
+    <color name="black_34">#341b1c</color>
+    <color name="grey_43">#433f3d</color>
+    <color name="grey_99">#999999</color>
+    <color name="brown_99">#996d13</color>
+
+    <color name="green">#4cd964</color>
+    <color name="black_22">#221815</color>
+    <color name="grey_8d">#8d8887</color>
+    <color name="grey_47">#474747</color>
+    <color name="black_55">#555555</color>
+    <color name="logint_input">#7fffffff</color>
+    <color name="grey_line">#f1f2f7</color>
+    <color name="grey_f1">#f1f2f7</color>
+    <color name="red_ff">#ffe8e4</color>
+    <color name="grey_f8">#f8f8f9</color>
+    <color name="grey_b2">#b2b2b2</color>
+    <color name="grey_de">#dedddc</color>
+    <color name="grey_9">#555555</color>
+    <color name="yellow_fe">#fee94e</color>
+    <!-- 半透明背景 -->
+    <color name="transparent_33">#a3000000</color>
+    <color name="transparent_19">#19000000</color>
+    <color name="transparent_99">#99000000</color>
+    <!-- 加载进度 -->
+    <color name="triangle">#aa72d572</color>
+    <color name="circle">#aa738ffe</color>
+    <color name="rect">#aae84e40</color>
+    <color name="view_bg">#00000000</color>
+    <color name="shadow">#25808080</color>
+    <color name="dialog_bg">#f5f5f5</color>
+    <color name="ysf_red_e64340">#e64340</color>
+
+    <color name="text_black">#333333</color>
+    <color name="text1">#59B29C</color>
+    <color name="text2">#333333</color>
+    <color name="background">#FFFFFF</color>
+    <color name="transparent">#00ffffff</color>
+
+    <color name="chart_line">#D0382B</color>
+    <color name="chart_text">#B4B4B4</color>
+    <color name="chart_fill">#e53732</color>
+
+    <color name="orange">#ffcf00</color>
+
+</resources>
