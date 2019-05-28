@@ -106,4 +106,14 @@ public class Utils {
         int resourceId = context.getResources().getIdentifier("navigation_bar_height", "dimen", "android");
         return resourceId > 0 ? context.getResources().getDimensionPixelSize(resourceId) : 0;
     }
+
+    public static int getScreenW(Context aty) {
+        DisplayMetrics dm = aty.getResources().getDisplayMetrics();
+        return  dm.widthPixels;
+    }
+
+    public static int getScreenH(Context aty) {
+        DisplayMetrics dm = aty.getResources().getDisplayMetrics();
+        return  dm.heightPixels;
+    }
 }

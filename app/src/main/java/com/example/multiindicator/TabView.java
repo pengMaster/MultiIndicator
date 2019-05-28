@@ -9,9 +9,6 @@ import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.lzy.imagepicker.util.Utils;
-
-import cn.parllay.toolsproject.ToolsApplication;
 
 /**
  * <pre>
@@ -60,7 +57,7 @@ public class TabView extends View implements ViewPager.OnPageChangeListener {
         tabPaint.setColor(Color.RED);
         tabPaint.setStyle(Paint.Style.FILL);
 
-        default_width = ToolsApplication.W;
+        default_width = Utils.getScreenW(context);
         default_height = (int) tabHeight;
     }
 
