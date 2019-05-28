@@ -18,6 +18,8 @@
         </activity>
 
         <activity android:name=".act.TabViewAct" />
+
+        <activity android:name=".act.TabLayoutAct" />
     </application>
 
 </manifest>

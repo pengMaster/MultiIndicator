@@ -25,7 +25,7 @@
                 android:layout_centerInParent="true"
                 android:textSize="@dimen/sp16"
                 android:textColor="@color/red"
-                android:text="标题1（0）"/>
+                android:text="Tab1（0）"/>
 
             <TextView
                 android:id="@+id/tvStoreTotalPAmount"
@@ -64,7 +64,7 @@
                 android:layout_centerInParent="true"
                 android:textSize="@dimen/sp16"
                 android:textColor="@color/grey_8d"
-                android:text="标题2（0）"/>
+                android:text="Tab2（0）"/>
 
             <TextView
                 android:id="@+id/tvGuideTotalPAmount"
