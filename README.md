@@ -7,8 +7,8 @@
 ## 1.传统的文字+指示器组合
 <div>
     <img src="https://github.com/pengMaster/picApplyGit/blob/master/MultiIndicator/ic_tabLayout.gif"   alt=""/>
-    <img src="https://github.com/pengMaster/picApplyGit/blob/master/MultiIndicator/ic_tabLayout_1.png" width="200" height="300"  alt=""/>
-    <img src="https://github.com/pengMaster/picApplyGit/blob/master/MultiIndicator/ic_tabLayout_2.png" width="200" height="300"  alt=""/>
+    <img src="https://github.com/pengMaster/picApplyGit/blob/master/MultiIndicator/ic_tabLayout_1.png"   alt=""/>
+    <img src="https://github.com/pengMaster/picApplyGit/blob/master/MultiIndicator/ic_tabLayout_2.png"   alt=""/>
 </div>
 
 xml:
@@ -64,10 +64,10 @@ java:
 ```
 ## 2.单纯的指示器
 <div>
-    <img src="https://github.com/pengMaster/picApplyGit/blob/master/MultiIndicator/ic_tabView.gif" width="150" height="250"  alt=""/>
-    <img src="https://github.com/pengMaster/picApplyGit/blob/master/MultiIndicator/ic_tabView_1.png" width="150" height="250"  alt=""/>
-    <img src="https://github.com/pengMaster/picApplyGit/blob/master/MultiIndicator/ic_tabView_2.png" width="150" height="250"  alt=""/>
-    <img src="https://github.com/pengMaster/picApplyGit/tree/master/MultiIndicator/anim_none.gif"  width="150" height="250" alt=""/>
+   <img src="https://github.com/pengMaster/picApplyGit/blob/master/MultiIndicator/anim_color.gif" alt=""/>
+    <img src="https://github.com/pengMaster/picApplyGit/blob/master/MultiIndicator/ic_tabView.gif"   alt=""/>
+    <img src="https://github.com/pengMaster/picApplyGit/blob/master/MultiIndicator/ic_tabView_1.png"   alt=""/>
+    <img src="https://github.com/pengMaster/picApplyGit/blob/master/MultiIndicator/ic_tabView_2.png"  alt=""/>
 </div>
 
 xml:
