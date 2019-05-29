@@ -159,7 +159,7 @@ java:
 ```
 
 ##  通用配置：
-    1. project build.gradle
+1. project build.gradle
 ```java
         allprojects {
             repositories {
@@ -167,7 +167,7 @@ java:
             }
         }
 ```
-    2. app build.gradle
+2. app build.gradle
 ```java
         dependencies {
                 implementation 'com.github.pengMaster:MultiIndicator:0.0.1'
