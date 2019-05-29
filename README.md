@@ -6,9 +6,9 @@
 
 ## 1.传统的文字+指示器组合
 <div>
-    <img src="https://github.com/pengMaster/picApplyGit/blob/master/MultiIndicator/ic_tabLayout.gif" width="150" height="250"  alt=""/>
-    <img src="https://github.com/pengMaster/picApplyGit/blob/master/MultiIndicator/ic_tabLayout_1.png" width="150" height="250"  alt=""/>
-    <img src="https://github.com/pengMaster/picApplyGit/blob/master/MultiIndicator/ic_tabLayout_2.png" width="150" height="250"  alt=""/>
+    <img src="https://github.com/pengMaster/picApplyGit/blob/master/MultiIndicator/ic_tabLayout.gif" width="200" height="300"  alt=""/>
+    <img src="https://github.com/pengMaster/picApplyGit/blob/master/MultiIndicator/ic_tabLayout_1.png" width="200" height="300"  alt=""/>
+    <img src="https://github.com/pengMaster/picApplyGit/blob/master/MultiIndicator/ic_tabLayout_2.png" width="200" height="300"  alt=""/>
 </div>
 
 xml:
