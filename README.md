@@ -1,6 +1,8 @@
 # ViewPager指示器有这一篇就够了
 多功能指示器，适用于ViewPager 多场景
-正在更新中...
+ - 传统的文字+指示器组合
+ - 单纯的指示器
+ - 圆点轮播指示器
 
 ## 1.传统的文字+指示器组合
 <div>
@@ -56,6 +58,10 @@ java:
             mTabLayout.setOnTabStripSelectedIndexListener(...);
 ```
 
+```
+    如果产品经理再次提出了`花里胡哨`的需求，那么上面的指示器就无法满足要求，为了高度解耦，
+    我们单纯的把指示器拿出来，然后我们就可以肆意妄为了，如下：
+```
 ## 2.单纯的指示器
 <div>
     <img src="https://github.com/pengMaster/picApplyGit/blob/master/MultiIndicator/ic_tabView.gif" width="150" height="250"  alt=""/>
@@ -63,7 +69,52 @@ java:
     <img src="https://github.com/pengMaster/picApplyGit/blob/master/MultiIndicator/ic_tabView_2.png" width="150" height="250"  alt=""/>
 </div>
 
+xml:
+```java
+
+            <com.example.indicatorlib.views.TabView
+                android:id="@+id/mIndicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:tabHeight="3dp"
+                app:tabColor="@color/red"
+                app:tabRadius="20dp"
+                >
+
+            </com.example.indicatorlib.views.TabView>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vpPersonManager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white_f2">
+
+            </android.support.v4.view.ViewPager
+```
+java:
+```java
+        List<Fragment> lists = new ArrayList<>();
+        Fragment fragment1 = new TestFragment();
+        Fragment fragment2 = new TestFragment();
+        lists.add(fragment1);
+        lists.add(fragment2);
+        BaseFragmentAdapter adapter = new BaseFragmentAdapter(getSupportFragmentManager(),lists);
+        ViewPager vpPersonManager = findViewById(R.id.vpPersonManager);
+        TabView tabView = findViewById(R.id.mIndicator);
+        vpPersonManager.setAdapter(adapter);
+        tabView.setViewPager(vpPersonManager);
+```
+扩展属性：
+```java
+        app:tabHeight="3dp"
+        app:tabColor="@color/red"
+        app:tabRadius="20dp"
+```
+
 ## 3.圆点轮播指示器
+
+扩展属性以及效果图：
 
 Name| Support version| Preview
 -------- | --- | ---
@@ -77,6 +128,35 @@ Name| Support version| Preview
 `AnimationType.DROP`| 0.0.1 |![anim_drop](https://github.com/pengMaster/picApplyGit/tree/master/MultiIndicator/anim_drop.gif)
 `AnimationType.SWAP`| 0.0.1 |![anim_swap](https://github.com/pengMaster/picApplyGit/tree/master/MultiIndicator/anim_swap.gif)
 
+
+xml:
+```java
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.example.indicatorlib.views.PageIndicatorView
+            android:id="@+id/pageIndicatorView"
+            app:piv_viewPager="@id/viewPager"//关联ViewPager
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="48dp"
+            attrs:piv_padding="12dp"
+            attrs:piv_radius="8dp" />
+```
+java:
+```java
+        pageIndicatorView.setAnimationType(customization.getAnimationType());
+        pageIndicatorView.setOrientation(customization.getOrientation());
+        pageIndicatorView.setRtlMode(customization.getRtlMode());
+        pageIndicatorView.setInteractiveAnimation(customization.isInteractiveAnimation());
+        pageIndicatorView.setAutoVisibility(customization.isAutoVisibility());
+        pageIndicatorView.setFadeOnIdle(customization.isFadeOnIdle());
+```
 
 ##  通用配置：
     1. project build.gradle
