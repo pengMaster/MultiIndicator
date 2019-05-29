@@ -173,3 +173,11 @@ java:
                 implementation 'com.github.pengMaster:MultiIndicator:0.0.1'
         }
 ```
+
+##  如果存在appcompat-v7 jar包冲突：
+```java
+    implementation ('com.github.pengMaster:MultiIndicator:0.0.1'){
+        exclude(module:'com.android.support:appcompat-v7')
+
+    }
+```
