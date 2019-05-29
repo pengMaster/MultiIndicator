@@ -64,8 +64,6 @@ java:
 ```
 ## 2.单纯的指示器
 <div>
-![anim_none](https://github.com/pengMaster/picApplyGit/blob/master/MultiIndicator/anim_none.gif)
-   <img src="https://github.com/pengMaster/picApplyGit/blob/master/MultiIndicator/anim_color.gif" alt=""/>
     <img src="https://github.com/pengMaster/picApplyGit/blob/master/MultiIndicator/ic_tabView.gif" width="200" height="356"  alt=""/>
     <img src="https://github.com/pengMaster/picApplyGit/blob/master/MultiIndicator/ic_tabView_1.png" width="200" height="356"  alt=""/>
     <img src="https://github.com/pengMaster/picApplyGit/blob/master/MultiIndicator/ic_tabView_2.png" width="200" height="356"  alt=""/>
@@ -183,3 +181,6 @@ java:
 
     }
 ```
+
+##  Issues
+    这么帅气的你，都看到这里了，给个star呗，乡里乡亲的.....
