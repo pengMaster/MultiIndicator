@@ -3,11 +3,11 @@
 正在更新中...
 
 ## 1.传统的文字+指示器组合
-<dev>
+<div>
     <img src="https://github.com/pengMaster/picApplyGit/blob/master/MultiIndicator/ic_tabLayout.gif" width="150" height="250"  alt=""/>
     <img src="https://github.com/pengMaster/picApplyGit/blob/master/MultiIndicator/ic_tabLayout_1.png" width="150" height="250"  alt=""/>
     <img src="https://github.com/pengMaster/picApplyGit/blob/master/MultiIndicator/ic_tabLayout_2.png" width="150" height="250"  alt=""/>
-</dev>
+</div>
 
 xml:
 ```java
@@ -25,7 +25,7 @@ xml:
                 app:nts_weight="3dp"/>
 ```
 java:
-    ```java
+```java
         List<Fragment> lists = new ArrayList<>();
         Fragment fragment1 = new TestFragment();
         Fragment fragment2 = new TestFragment();
@@ -36,9 +36,9 @@ java:
         BaseFragmentAdapter adapter = new BaseFragmentAdapter(getSupportFragmentManager(),lists);
         mViewPager.setAdapter(adapter);
         mCenterTabLayout.setViewPager(mViewPager, 1);
-    ```
+```
 扩展属性：
-    ```java
+```java
             mTabLayout.setTitles("Tab1", "Tab2", "Tab3");
             mTabLayout.setTabIndex(0, true);
             mTabLayout.setTitleSize(15);
@@ -54,12 +54,14 @@ java:
             mTabLayout.setActiveColor(Color.WHITE);
             mTabLayout.setOnPageChangeListener(...);
             mTabLayout.setOnTabStripSelectedIndexListener(...);
-    ```
+```
 
 ## 2.单纯的指示器
+<div>
     <img src="https://github.com/pengMaster/picApplyGit/blob/master/MultiIndicator/ic_tabView.gif" width="150" height="250"  alt=""/>
     <img src="https://github.com/pengMaster/picApplyGit/blob/master/MultiIndicator/ic_tabView_1.png" width="150" height="250"  alt=""/>
     <img src="https://github.com/pengMaster/picApplyGit/blob/master/MultiIndicator/ic_tabView_2.png" width="150" height="250"  alt=""/>
+</div>
 
 ## 3.圆点轮播指示器
 
@@ -78,16 +80,16 @@ Name| Support version| Preview
 
 ##  通用配置：
     1. project build.gradle
-    ```java
+```java
         allprojects {
             repositories {
                 maven { url 'https://jitpack.io' }
             }
         }
-    ```
+```
     2. app build.gradle
-    ```java
+```java
         dependencies {
                 implementation 'com.github.pengMaster:MultiIndicator:0.0.1'
         }
-    ```
+```
