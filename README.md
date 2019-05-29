@@ -1,3 +1,6 @@
-# MultiIndicator
+# ViewPager指示器有这一篇就够了
 多功能指示器，适用于ViewPager 多场景
 正在更新中...
+
+1.传统的文字+指示器组合
+

@@ -20,6 +20,10 @@
         <activity android:name=".act.TabViewAct" />
 
         <activity android:name=".act.TabLayoutAct" />
+
+        <activity android:name=".act.PageIndicatorAct" />
+
+        <activity android:name=".act.CustomizeActivity" />
     </application>
 
 </manifest>

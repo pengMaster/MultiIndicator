@@ -22,4 +22,8 @@ public class MainActivity extends AppCompatActivity {
     public void onTabLayoutClick(View view) {
         startActivity(new Intent(getApplicationContext(),TabLayoutAct.class));
     }
+
+    public void onPageLayoutClick(View view) {
+        startActivity(new Intent(getApplicationContext(),PageIndicatorAct.class));
+    }
 }
