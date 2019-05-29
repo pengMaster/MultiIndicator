@@ -67,6 +67,7 @@ java:
     <img src="https://github.com/pengMaster/picApplyGit/blob/master/MultiIndicator/ic_tabView.gif" width="150" height="250"  alt=""/>
     <img src="https://github.com/pengMaster/picApplyGit/blob/master/MultiIndicator/ic_tabView_1.png" width="150" height="250"  alt=""/>
     <img src="https://github.com/pengMaster/picApplyGit/blob/master/MultiIndicator/ic_tabView_2.png" width="150" height="250"  alt=""/>
+    <img src="https://github.com/pengMaster/picApplyGit/tree/master/MultiIndicator/anim_none.gif"   alt=""/>
 </div>
 
 xml:
