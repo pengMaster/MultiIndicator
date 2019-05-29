@@ -3,12 +3,14 @@
 正在更新中...
 
 ## 1.传统的文字+指示器组合
+<dev>
     <img src="https://github.com/pengMaster/picApplyGit/blob/master/MultiIndicator/ic_tabLayout.gif" width="150" height="250"  alt=""/>
     <img src="https://github.com/pengMaster/picApplyGit/blob/master/MultiIndicator/ic_tabLayout_1.png" width="150" height="250"  alt=""/>
     <img src="https://github.com/pengMaster/picApplyGit/blob/master/MultiIndicator/ic_tabLayout_2.png" width="150" height="250"  alt=""/>
+</dev>
 
 xml:
-    ```java
+```java
             <com.example.indicatorlib.views.TabLayout
                 android:id="@+id/nts_top"
                 android:layout_width="match_parent"
@@ -21,7 +23,7 @@ xml:
                 app:nts_size="15sp"
                 app:nts_titles="@array/titles"
                 app:nts_weight="3dp"/>
-    ```
+```
 java:
     ```java
         List<Fragment> lists = new ArrayList<>();
